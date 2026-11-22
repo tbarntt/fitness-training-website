@@ -251,20 +251,45 @@ tbody tr:nth-child(even) {
 }
 
 
+
 /* Fitness Website Images */
 .photo-section {
     text-align: center;
+    margin: 20px auto;
 }
 
 .workout-image {
     display: block;
     width: 100%;
-    max-width: 750px;
-    height: auto;
+    max-width: 550px;
+    height: 280px;
     margin: 0 auto;
     border-radius: 10px;
     object-fit: cover;
 }
+
+
+
+
+/* Homepage Wide Gym Photo */
+img[src="images/images/training-wide.png"] {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+    margin: 0 auto;
+}
+
+
+
+/* Adjust Strength Training Photo */
+img[src="images/strength.jpg"] {
+    object-position: center 20%;
+}
+
 
 
 /* Website Logo */
