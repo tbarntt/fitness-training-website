@@ -1,24 +1,40 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitness & Training</title>
+
+    <meta name="description" content="Explore strength training and conditioning
+          workouts, compare fitness programs, and estimate
+          your one-rep max with our free calculator.">
+
+    <title>Fitness & Training | Workouts and 1RM Calculator</title>
+
     <link rel="stylesheet" href="styles.css">
 </head>
+
+
 
 <body>
     <!-- Website Header -->
     <header>
+        <img src="images/logo.png" alt="Fitness & Training logo featuring a barbell" class="site-logo">
         <h1>Fitness & Training</h1>
+
         <nav aria-label="Main navigation">
-            <a href="#home">Home</a>
-            <a href="#programs">Workout Programs</a>
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="programs.html">Workout Programs</a>
+            <a href="strength.html">Strength Training</a>
+            <a href="conditioning.html">Conditioning</a>
             <a href="#calculator">1RM Calculator</a>
-            <a href="#about">About</a>
+            <a href="about.html">About</a>
         </nav>
     </header>
+
+
 
     <main>
         <!-- Introduction Section -->
@@ -31,6 +47,15 @@
             </p>
         </section>
 
+
+
+        <!-- Homepage Fitness Photo -->
+        <div class="photo-section">
+            <img src="images/training.jpg" alt="Fitness equipment arranged in a gym" class="workout-image"
+                loading="lazy">
+        </div>
+
+
         <!-- Workout Programs Section -->
         <section id="programs">
             <h2>Workout Programs</h2>
@@ -39,6 +64,7 @@
                 you build strength and improve conditioning.
             </p>
 
+
             <div class="program-container">
                 <article class="program-card">
                     <h3>Strength Training</h3>
@@ -46,7 +72,7 @@
                         Build muscle and increase your strength
                         through structured resistance training.
                     </p>
-                    <a href="#strength-description">
+                    <a href="strength.html">
                         Learn More About Strength Training
                     </a>
                 </article>
@@ -57,11 +83,12 @@
                         Improve endurance and cardiovascular
                         fitness through conditioning workouts.
                     </p>
-                    <a href="#conditioning-description">
+                    <a href="conditioning.html">
                         Learn More About Conditioning
                     </a>
                 </article>
             </div>
+
         </section>
 
         <!-- Workout Descriptions -->
@@ -97,12 +124,10 @@
 
             <form id="rm-form">
                 <label for="weight">Weight Lifted (lbs):</label>
-                <input type="number" id="weight"
-                       name="weight" min="1" required>
+                <input type="number" id="weight" name="weight" min="1" required>
 
                 <label for="reps">Repetitions:</label>
-                <input type="number" id="reps"
-                       name="reps" min="1" max="30" required>
+                <input type="number" id="reps" name="reps" min="1" max="30" required>
 
                 <button type="submit">Calculate 1RM</button>
             </form>
@@ -127,4 +152,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
